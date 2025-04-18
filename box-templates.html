@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Design Templates</title>
+    <link rel="stylesheet" href="enhanced-styles.css">
+    <link rel="stylesheet" href="author-styles.css">
+    <link rel="stylesheet" href="width-fixes.css">
+    <link rel="stylesheet" href="box-design-elements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .template-section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .template-section h2 {
+            margin-bottom: 30px;
+        }
+        
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .code-example {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Box Design Templates</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#comparison">Career Comparison</a></li>
+                    <li><a href="index.html#career-paths">Career Paths</a></li>
+                    <li><a href="index.html#india-specific">India Guide</a></li>
+                    <li><a href="index.html#learning-paths">Learning Paths</a></li>
+                    <li><a href="author.html">About the Author</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Box Design Templates</h2>
+                    <p>Consistent box designs with proper shadows and borders for use across all pages</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section template-section">
+            <div class="container">
+                <h2>Standard Box Design</h2>
+                <div class="template-grid">
+                    <div class="standard-box primary-box">
+                        <h3>Standard Box</h3>
+                        <p>This is a standard box with a clean design, proper shadow, and a colored top border. Hover over this box to see the elevation effect.</p>
+                    </div>
+                    
+                    <div class="standard-box secondary-box">
+                        <h3>Secondary Color</h3>
+                        <p>This standard box uses the secondary color for the top border. The box design remains consistent while allowing for color variations.</p>
+                    </div>
+                    
+                    <div class="standard-box accent-box">
+                        <h3>Accent Color</h3>
+                        <p>This standard box uses the accent color for the top border, providing visual distinction while maintaining design consistency.</p>
+                    </div>
+                </div>
+                
+                <div class="code-example">
+&lt;div class="standard-box primary-box"&gt;
+    &lt;h3&gt;Box Title&lt;/h3&gt;
+    &lt;p&gt;Box content goes here...&lt;/p&gt;
+&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section class="section template-section">
+            <div class="container">
+                <h2>Icon Box Design</h2>
+                <div class="template-grid">
+                    <div class="icon-box">
+                        <div class="box-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Icon Box</h3>
+                        <p>This box design includes a circular icon at the top. The icon uses the primary color background with a white icon.</p>
+                    </div>
+                    
+                    <div class="icon-box">
+                        <div class="box-icon" style="background-color: var(--secondary-color);">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Secondary Icon</h3>
+                        <p>This icon box uses the secondary color for the icon background, providing visual distinction while maintaining design consistency.</p>
+                    </div>
+                    
+                    <div class="icon-box">
+                        <div class="box-icon" style="background-color: var(--accent-color);">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Accent Icon</h3>
+                        <p>This icon box uses the accent color for the icon background, creating a vibrant focal point while maintaining the overall design.</p>
+                    </div>
+                </div>
+                
+                <div class="code-example">
+&lt;div class="icon-box"&gt;
+    &lt;div class="box-icon"&gt;
+        &lt;i class="fas fa-code"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;Box Title&lt;/h3&gt;
+    &lt;p&gt;Box content goes here...&lt;/p&gt;
+&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section class="section template-section">
+            <div class="container">
+                <h2>Career Card Design</h2>
+                <div class="template-grid">
+                    <div class="career-card">
+                        <div style="padding: 20px;">
+                            <div class="career-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Software Development</h3>
+                        </div>
+                        <div class="career-details">
+                            <h4>Overview</h4>
+                            <p>Software development remains one of the most versatile and in-demand tech careers. Developers create applications and systems that power modern businesses.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="career-card">
+                        <div style="padding: 20px;">
+                            <div class="career-icon" style="background-color: var(--secondary-color);">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>DevOps</h3>
+                        </div>
+                        <div class="career-details">
+                            <h4>Overview</h4>
+                            <p>DevOps engineers bridge development and operations, creating efficient pipelines for software delivery and infrastructure management.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="career-card">
+                        <div style="padding: 20px;">
+                            <div class="career-icon" style="background-color: var(--accent-color);">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Cybersecurity</h3>
+                        </div>
+                        <div class="career-details">
+                            <h4>Overview</h4>
+                            <p>Cybersecurity professionals protect organizations from digital threats, ensuring the confidentiality, integrity, and availability of systems and data.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="code-example">
+&lt;div class="career-card"&gt;
+    &lt;div style="padding: 20px;"&gt;
+        &lt;div class="career-icon"&gt;
+            &lt;i class="fas fa-code"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;h3&gt;Card Title&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="career-details"&gt;
+        &lt;h4&gt;Section Title&lt;/h4&gt;
+        &lt;p&gt;Card content goes here...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section class="section template-section">
+            <div class="container">
+                <h2>Service Card Design</h2>
+                <div class="template-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>One-on-One Coaching</h3>
+                        <p>Personalized sessions tailored to your specific career goals and challenges. Get direct guidance on your tech career journey.</p>
+                        <ul class="service-features">
+                            <li>Career path assessment</li>
+                            <li>Skill gap analysis</li>
+                            <li>Interview preparation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Corporate Consulting</h3>
+                        <p>Strategic guidance for organizations looking to optimize their tech talent acquisition, development, and retention strategies.</p>
+                        <ul class="service-features">
+                            <li>Team structure optimization</li>
+                            <li>Hiring strategy development</li>
+                            <li>Training program design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Group Workshops</h3>
+                        <p>Interactive sessions designed to help teams and groups develop critical tech skills and knowledge in a collaborative environment.</p>
+                        <ul class="service-features">
+                            <li>Emerging technology trends</li>
+                            <li>Web3 fundamentals</li>
+                            <li>Tech career navigation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="code-example">
+&lt;div class="service-card"&gt;
+    &lt;div class="service-icon"&gt;
+        &lt;i class="fas fa-user-tie"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;h3&gt;Service Title&lt;/h3&gt;
+    &lt;p&gt;Service description goes here...&lt;/p&gt;
+    &lt;ul class="service-features"&gt;
+        &lt;li&gt;Feature one&lt;/li&gt;
+        &lt;li&gt;Feature two&lt;/li&gt;
+        &lt;li&gt;Feature three&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section class="section template-section">
+            <div class="container">
+                <h2>Expertise Item Design</h2>
+                <div class="template-grid">
+                    <div class="expertise-item">
+                        <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        <div>
+                            <h4>Strategic Planning</h4>
+                            <p>Personalized roadmaps for tech professionals at all career stages</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-item">
+                        <i class="fas fa-code-branch" style="font-size: 2rem; color: var(--secondary-color);"></i>
+                        <div>
+                            <h4>Web3 Integration</h4>
+                            <p>Guidance on transitioning to and leveraging decentralized technologies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-item">
+                        <i class="fas fa-users-cog" style="font-size: 2rem; color: var(--accent-color);"></i>
+                        <div>
+                            <h4>Team Management</h4>
+                            <p>Best practices for leading high-performing technical teams</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="code-example">
+&lt;div class="expertise-item"&gt;
+    &lt;i class="fas fa-chart-line" style="font-size: 2rem; color: var(--primary-color);"&gt;&lt;/i&gt;
+    &lt;div&gt;
+        &lt;h4&gt;Item Title&lt;/h4&gt;
+        &lt;p&gt;Item description goes here...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section class="section template-section">
+            <div class="container">
+                <h2>Testimonial Box Design</h2>
+                <div class="template-grid">
+                    <div class="testimonial-box">
+                        <div style="font-style: italic; position: relative; padding: 0 20px;">
+                            <p>"This testimonial box design provides a clean, professional look for displaying client testimonials. The subtle shadow and rounded corners create a polished appearance."</p>
+                        </div>
+                        <div style="text-align: right; margin-top: 20px;">
+                            <p><strong>John Doe</strong> - CEO, Tech Company</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-box">
+                        <div style="font-style: italic; position: relative; padding: 0 20px;">
+                            <p>"The consistent box design across all elements creates a cohesive visual experience. The shadow depth provides just enough elevation without being distracting."</p>
+                        </div>
+                        <div style="text-align: right; margin-top: 20px;">
+                            <p><strong>Jane Smith</strong> - UX Designer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-box">
+                        <div style="font-style: italic; position: relative; padding: 0 20px;">
+                            <p>"These box designs strike the perfect balance between modern aesthetics and functional design. The hover effects add a subtle interactive element."</p>
+                        </div>
+                        <div style="text-align: right; margin-top: 20px;">
+                            <p><strong>David Wilson</strong> - Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="code-example">
+&lt;div class="testimonial-box"&gt;
+    &lt;div style="font-style: italic; position: relative; padding: 0 20px;"&gt;
+        &lt;p&gt;"Testimonial text goes here..."&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div style="text-align: right; margin-top: 20px;"&gt;
+        &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt; - Position, Company&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</div>
+            </div>
+        </section>
+
+        <section class="section template-section">
+            <div class="container">
+                <h2>Color Variations</h2>
+                <p>All box designs can be customized with different color variations while maintaining consistent shadows and borders.</p>
+                
+                <h3>Border-Top Color Variations</h3>
+                <div class="color-grid">
+                    <div class="standard-box primary-box">
+                        <h4>Primary Color</h4>
+                        <p>Class: primary-box</p>
+                    </div>
+                    
+                    <div class="standard-box secondary-box">
+                        <h4>Secondary Color</h4>
+                        <p>Class: secondary-box</p>
+                    </div>
+                    
+                    <div class="standard-box accent-box">
+                        <h4>Accent Color</h4>
+                        <p>Class: accent-box</p>
+                    </div>
+                    
+                    <div class="standard-box success-box">
+                        <h4>Success Color</h4>
+                        <p>Class: success-box</p>
+                    </div>
+                    
+                    <div class="standard-box warning-box">
+                        <h4>Warning Color</h4>
+                        <p>Class: warning-box</p>
+                    </div>
+                </div>
+                
+                <h3>Icon Color Variations</h3>
+                <div class="color-grid">
+                    <div class="icon-box">
+                        <div class="box-icon" style="background-color: var(--primary-color);">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Primary Color</h4>
+                    </div>
+                    
+                    <div class="icon-box">
+                        <div class="box-icon" style="background-color: var(--secondary-color);">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Secondary Color</h4>
+                    </div>
+                    
+                    <div class="icon-box">
+                        <div class="box-icon" style="background-color: var(--accent-color);">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Accent Color</h4>
+                    </div>
+                    
+                    <div class="icon-box">
+                        <div class="box-icon" style="background-color: var(--success-color);">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Success Color</h4>
+                    </div>
+                    
+                    <div class="icon-box">
+                        <div class="box-icon" style="background-color: var(--warning-color);">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Warning Color</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Box Design Templates</h3>
+                    <p>Consistent box designs with proper shadows and borders for use across all pages</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#comparison">Career Comparison</a></li>
+                        <li><a href="index.html#career-paths">Career Paths</a></li>
+                        <li><a href="index.html#india-specific">India Guide</a></li>
+                        <li><a href="index.html#learning-paths">Learning Paths</a></li>
+                        <li><a href="author.html">About the Author</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Flugelsoft Labs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

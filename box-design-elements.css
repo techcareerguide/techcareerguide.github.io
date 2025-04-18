@@ -1,0 +1,220 @@
+/* Box Design Elements
+   Extracted from career path page and author page
+   For consistent use across all pages */
+
+:root {
+    /* Core design variables */
+    --primary-color: #4a6fa5;
+    --secondary-color: #334e68;
+    --accent-color: #ff6b6b;
+    --light-color: #f8f9fa;
+    --dark-color: #2d3748;
+    --success-color: #48bb78;
+    --warning-color: #f6ad55;
+    --text-color: #2d3748;
+    
+    /* Box design variables */
+    --border-radius: 10px;
+    --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --hover-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --transition: all 0.3s ease;
+}
+
+/* Standard Box Design */
+.standard-box {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    position: relative;
+    border-top: 5px solid var(--primary-color);
+    padding: 25px;
+}
+
+.standard-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-box-shadow);
+}
+
+/* Icon Box Design (with circular icon) */
+.icon-box {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    position: relative;
+    padding: 30px;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-box-shadow);
+}
+
+.box-icon {
+    background-color: var(--primary-color);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Career Card Design (from career path page) */
+.career-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    position: relative;
+    border-top: 5px solid var(--primary-color);
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-box-shadow);
+}
+
+.career-icon {
+    background-color: var(--primary-color);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.career-card h3 {
+    text-align: left;
+    padding: 0 20px 20px;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.career-details {
+    display: block;
+    padding: 25px;
+    border-top: 1px solid #eee;
+}
+
+/* Service Card Design (from author page) */
+.service-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Expertise List Item Design (from author page) */
+.expertise-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background-color: white;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.expertise-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Box Design (from author page) */
+.testimonial-box {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+}
+
+/* Color Variations */
+.primary-box {
+    border-top-color: var(--primary-color);
+}
+
+.primary-box .box-icon {
+    background-color: var(--primary-color);
+}
+
+.secondary-box {
+    border-top-color: var(--secondary-color);
+}
+
+.secondary-box .box-icon {
+    background-color: var(--secondary-color);
+}
+
+.accent-box {
+    border-top-color: var(--accent-color);
+}
+
+.accent-box .box-icon {
+    background-color: var(--accent-color);
+}
+
+.success-box {
+    border-top-color: var(--success-color);
+}
+
+.success-box .box-icon {
+    background-color: var(--success-color);
+}
+
+.warning-box {
+    border-top-color: var(--warning-color);
+}
+
+.warning-box .box-icon {
+    background-color: var(--warning-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .standard-box,
+    .icon-box,
+    .career-card,
+    .service-card,
+    .expertise-item,
+    .testimonial-box {
+        padding: 20px;
+    }
+    
+    .box-icon,
+    .career-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}

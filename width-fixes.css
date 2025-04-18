@@ -1,0 +1,68 @@
+/* Container Fix */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Width Fixes */
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Responsive Table Fix */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Career Card Width Fix */
+.career-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Author Feature Width Fix */
+.author-feature {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Footer Width Fix */
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+        width: 100%;
+    }
+    
+    .author-feature {
+        padding: 20px;
+    }
+    
+    .career-details {
+        padding: 15px;
+    }
+}
+
+/* Image Responsiveness Fix */
+img {
+    max-width: 100%;
+    height: auto;
+}
